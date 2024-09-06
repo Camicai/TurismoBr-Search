@@ -1,0 +1,173 @@
+body{
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+ .body .h1{
+    margin-top: 100px;
+    font-family: Helvetica;
+    margin-bottom: 0,05%;
+ }
+
+ body {
+    background-image: url('images/caracatas.jpg'); /* coloca imagem no fundo */
+    background-attachment: fixed; 
+    background-size: cover;
+  }
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding: 75px;
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 3rem;
+}
+
+input{
+    display: flex;
+    height: 50px;
+    width: 30rem;
+    border: 10%;
+    /*margin-left: 30%;*/
+    border-radius: 50px; /*arredondamento do input */
+    border: 1px solid rgb(214, 230, 232);
+    outline: none; /*remove o contorno padrão */
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+   }
+
+   .input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+  }
+  
+  .input:active {
+    transform: scale(0.95);
+  }
+  
+  .input:focus {
+    border: 2px solid grey;
+  }
+
+footer{
+    background-color: #c6d1cd; 
+    margin-top: auto;
+    width: 100%;
+    margin-top: auto;
+    height: 15%;
+}
+
+footer p{
+    padding-top: 40px;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    border: 100px;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    will-change: box-shadow,transform;
+    background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #11131f 100% );
+    box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%), 0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%), inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+    padding: 0 2em;
+    border-radius: 50px;
+    color: #fff;
+    height: 2.6em;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+  }
+
+  button:hover {
+    box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3c4fe0;
+    transform: translateY(-0.1em);
+  }
+  
+  button:active {
+    box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
+    transform: translateY(0em);
+  }
+  
+  /*.resultados-pesquisa {
+    width: 500%;
+    height: 60vh;
+  } */
+
+  .descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+  }
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+  align-items: center;
+  width: 60rem; /* Largura máxima da caixa de resultados */
+  height: 90vh; /* Altura máxima da caixa de resultados */
+  overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+  margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+  padding: 1rem; /* Espaçamento interno */
+  border-radius: 0.6rem; /* Borda arredondada */
+  margin: auto;
+  margin-top: 1rem;
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+  background: #c6d1cd; /* Cor de fundo dos itens */
+  width: 95%;
+  margin-left: none;
+  border-radius: 0.6rem; /* Borda arredondada */
+  padding: 1rem; /* Espaçamento interno */
+  margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+  font-size: 1.5rem; /* Tamanho da fonte */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222831; /* Cor do texto */
+}
+
+.item-resultado p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  color: #30475E; /* Cor do texto dos links */
+  display: flex;
+  margin-left: 40.5%;
+}
+
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+  color: #45474B; /* Cor do texto */
+  margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+img {
+  height: auto;
+  width: auto;
+}
